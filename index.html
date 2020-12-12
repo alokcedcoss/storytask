@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> Story Form</title>
+
+</head>
+<body>
+<div class="main">
+<div class="short"><img src="story.png"></div>
+
+
+<div class="short1" style="margin-top: 5%;">
+<h1>Complete the Form-<br> Complete the Story!
+	<hr>
+</h1>
+	<div style="text-align:center; padding-bottom: 10%;">
+		<form action="story1.html" method="get" >
+		<label class="label2">Animal:</label>
+		<input type="text" name="animals" id="animals"><br><br>
+		<label class="label2">Another Animal:</label>
+		<input type="text" name="another animals" id="anotheranimals"><br><br>
+		<label class="label2">One More Animal:</label>
+		<input type="text" name="one more animals" id="moreanimals"><br><br>
+		<label class="label2">Adjective(Past tense):</label>
+		<input type="text" name="adjective" id="adjective"><br><br>
+		<label class="label2">Verb(ends in-ing):</label>
+		<input type="text" name="verb" id="verb"><br><br>
+		<label class="label2">Number:</label>
+		<input type="Number" name="number" id="number"><br><br>
+		<label class="label2">Yes or No:</label>
+		<input type="radio" id="yes" value="yes" name="yesno">
+        <label class="label2" for="Yes">Yes</label>
+		<input type="radio"  id="no" value="no" name="yesno">
+		<label class="label2" for="No">NO</label><br><br>
+	<label class="label2"> Relative speed(ends in-er) </label>
+
+  <input type="text" id="speed" /><br><br>
+  <label class="label2">Motivational Quote:</label>
+<input type="text" name="quote" id=quote><br><br>
+
+<label class="label2">Meaningful Message:</label><br>
+<textarea rows="7" cols="35" name="textarea" id="message" >
+</textarea><br>
+<br>
+<button onclick="show()">Form My Story!</button>
+<br>
+
+		</form>
+	</div>
+</div>
+</div>
+<script> 
+function show()
+{
+
+
+            var d=document.querySelector('input[name="yesno"]:checked').value;
+     let animalsone = document.getElementById("animals");
+            let animalsanother = document.getElementById("anotheranimals");
+            let animalsmore = document.getElementById("moreanimals");
+            let adjective = document.getElementById("adjective");
+            let verb = document.getElementById("verb");
+            let number = document.getElementById("number")
+            let speed = document.getElementById("speed");
+            let quote = document.getElementById("quote");
+            let message = document.getElementById("message");
+            /*let choice1 = document.getElementById("yesno");*/
+
+
+
+
+
+            localStorage.setItem("animal1", animalsone.value);
+            localStorage.setItem("animal2", animalsanother.value);
+            localStorage.setItem("animal3", animalsmore.value);
+            localStorage.setItem("adjective", adjective.value);
+            localStorage.setItem("verb", verb.value);
+             localStorage.setItem("choice2", d);
+            localStorage.setItem("number", number.value);
+            localStorage.setItem("speed", speed.value);
+            localStorage.setItem("quote", quote.value);
+            localStorage.setItem("message", message.value);
+           
+
+
+        }
+</script>
+</script>
+</body>
+</html>

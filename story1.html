@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="style.css">
+	<title>Story Telling</title>
+</head>
+<body>
+<div class="main">
+<div class="short"><img src="story.png">
+</div>
+<div class="short3" style="margin-top:10%;">
+
+	<div style="text-align: center;padding: 3%;">
+
+		<h1>The <u id="animal_1">null</u> And The <u id="animal_2">null</u></h1>
+        </div>
+        <div style="text-align: center;">
+            <p>
+                A <u id="animal_1"><b>null</b></u> was making fun of the <u id="animal_2"><b>null</b></u> one day for being slow.
+            </p>
+
+            <p>
+                "Do you ever get anywhere?" he asked with a mocking laugh.
+            </p>
+
+            <p>
+                <u><b id="choice2">null</b></u> replied the <u id="animal_2"><b>null</b></u>. "but i get there <u><b id="speed">null</b></u> than you think. I'll run a race and prove it."
+            </p>
+
+            <p>
+                The <u id="animal_1"><b>null</b></u> was so much <u><b id="adjective">null</b></u> at the idea of running a race with the <u id="animal_2"><b>null</b></u>. but for the fun of the thing he agreed. So the <u><b id="third">null</b></u>, who has
+                consented to act as judge, marked the distance yelled,"
+                <u><b id="quote">null</b></u>".
+            </p>
+            <p>
+                The <u id="animal_1"><b>null</b></u> was soon far out of sight, and to make the <u id="animal_2"><b>null</b></u> feel very deeply how ridiculous it was for him to try a race with a <u id="animal_1"><b>null</b></u>. he went off the course to practise
+                <u id="verb"><b>null</b></u> for <u><b id="number">null</b></u> hours untill the <u id="animal_2"><b>null</b></u> should catch up.
+            </p>
+            <p>
+                The <u id="animal_2"><b>null</b></u> meanwhile kept going slowly but steadily, and, after a time, passed the place where the <u id="animal_1"><b>null</b></u> was. The <u id="animal_1"><b>null</b></u> was so caught
+                up in; and when at last he did stop, the <u id="animal_2"><b>null</b></u> was near the goal. The <u id="animal_1"><b>null</b></u> now ran his swiftest, but he could not overtake the <u id="animal_2"><b>null</b></u>in time.
+            </p>
+            <h2>Moral of the story:</h2>
+            <p id="message"><i>"null"</i></p>
+
+        </div>
+        <div style="text-align: center;">
+        <a href="index1.html">start Over</a>
+        <a href="story1.html"></div>
+    </div>
+	</div>
+</div>
+<script>
+
+    var storyelements = document.querySelectorAll('[id="animal_1"]');
+        console.log(storyelements);
+        for (var i = 0; i < storyelements.length; i++) {
+            storyelements[i].innerHTML = localStorage.getItem("animal1");
+        }
+        var storyelements = document.querySelectorAll('[id="animal_2"]');
+        console.log(storyelements);
+        for (var i = 0; i < storyelements.length; i++) {
+            storyelements[i].innerHTML = localStorage.getItem("animal2");
+        }
+
+        document.getElementById("third").innerHTML = localStorage.getItem("animal3");
+        document.getElementById("adjective").innerHTML = localStorage.getItem("adjective");
+        document.getElementById("quote").innerHTML = localStorage.getItem("quote");
+        document.getElementById("number").innerHTML = localStorage.getItem("number");
+        document.getElementById("verb").innerHTML = localStorage.getItem("verb");
+        document.getElementById("speed").innerHTML = localStorage.getItem("speed");
+        document.getElementById("message").innerHTML = localStorage.getItem("message");
+        document.getElementById("choice2").innerHTML = localStorage.getItem("choice2")
+
+
+</script>
+</body>
+</html>
